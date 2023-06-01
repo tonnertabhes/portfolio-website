@@ -1,0 +1,102 @@
+.Examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--sunset);
+  width: 100%;
+}
+
+.examples-header {
+  color: var(--earth);
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-decoration: underline;
+  font-size: 50px;
+}
+
+.examples-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.example-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  max-width: 100%;
+  width: 250px;
+  background-color: var(--sand);
+  padding: 1.5em;
+  border-radius: 0.3em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336);
+  transition: 0.5s;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.example-div:hover {
+  transition: 0.2s;
+  transform: scale(101%);
+}
+
+.example-description {
+  color: var(--earth);
+  text-align: center;
+}
+
+.example-title {
+  margin: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.example-btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.example-btns > a {
+  text-decoration: none;
+}
+
+.example-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.3em;
+  border: none;
+  background-color: var(--cream);
+  color: var(--earth);
+  font-weight: bold;
+  padding: 0.5em;
+  transition: 0.2s;
+}
+
+.example-btn:hover {
+  transform: translateY(-2px);
+  background-color: var(--sunset);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.example-thumbnail {
+  width: 90%;
+  margin: 1em;
+  border: solid white 10px;
+  border-radius: 0.5em;
+}
+
+.githubLogo {
+  fill: var(--earth);
+  max-width: 15px;
+  margin-right: 5px;
+}

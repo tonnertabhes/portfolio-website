@@ -1,0 +1,78 @@
+.Navbar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffbb00;
+}
+
+.Navbar > ul > a {
+  text-decoration: none;
+  color: var(--cream);
+}
+
+.navbar-options {
+  animation: 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 navSlide;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+  margin-right: 10%;
+  margin-left: auto;
+  list-style: none;
+}
+
+@keyframes navSlide {
+  0% {
+    transform: translateX(115%);
+  }
+  33% {
+    transform: translateX(115%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.navbar-text {
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
+  list-style: none;
+  text-decoration: none;
+  color: var(--cream);
+}
+
+.navbar-text:hover {
+  cursor: pointer;
+  color: var(--earth);
+  transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transform: scale(105%);
+}
+
+.hire-btn {
+  border: solid var(--cream);
+  padding: 0.25em 0.5em 0.25em 0.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+  list-style: none;
+  text-decoration: none;
+  border-radius: 0.2em;
+  color: var(--cream);
+  transition: 0.5s;
+}
+
+.hire-btn:hover {
+  cursor: pointer;
+  transform: scale(105%);
+  border: solid var(--earth);
+  color: var(--earth);
+  background-color: var(--sand);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menuBars {
+  margin-left: auto;
+  margin-right: 10%;
+}
