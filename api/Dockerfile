@@ -9,6 +9,6 @@ COPY go.sum .
 RUN go mod download
 
 COPY . .
-RUN go build -o /golang-api
+RUN go build -o /portfolio-api
 
-CMD ["/golang-api"]
+CMD ["/portfolio-api"]

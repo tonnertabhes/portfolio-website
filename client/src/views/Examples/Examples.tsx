@@ -24,7 +24,17 @@ export default function Examples({ examplesRef }: ExamplesInterface) {
               <p className="example-description">{item.description}</p>
               <div className="example-btns">
                 <a href={item.livePath}>
-                  <button className="example-btn">Live Page</button>
+                  <button
+                    className="example-btn"
+                    onClick={() => {
+                      if (item.deprecated) {
+                        window.alert("Project is deprecated!");
+                      }
+                      return;
+                    }}
+                  >
+                    Live Page
+                  </button>
                 </a>
                 <a href={item.githubPath}>
                   <button className="example-btn">
