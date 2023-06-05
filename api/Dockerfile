@@ -5,10 +5,9 @@ ENV GO_ENV=production
 WORKDIR /usr/src/api
 
 COPY go.mod .
-COPY go.sum .
 RUN go mod download
 
 COPY . .
-RUN go build -o /portfolio-api
+RUN go build resume
 
-CMD ["/portfolio-api"]
+CMD ["/resume"]
