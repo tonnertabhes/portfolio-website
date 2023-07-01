@@ -57,7 +57,7 @@ export default function Navbar({
       redirect: "follow",
     };
 
-    fetch("https://localhost:8080/download", requestOptions)
+    fetch("https://williamkristiansen.art/download", requestOptions)
       .then((response) => response.blob())
       .then((result) => {
         const href = window.URL.createObjectURL(result);
