@@ -43,7 +43,7 @@ export default function Navbar({
 
   function getResume() {
     var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "text/plain");
+    myHeaders.append("Content-Type", "application/pdf");
 
     interface requestOptionsI {
       method: string;
