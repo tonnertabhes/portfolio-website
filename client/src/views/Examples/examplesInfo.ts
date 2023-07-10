@@ -8,7 +8,7 @@ export const examplesInfo = [
     name: "LuckBRC Landing Page (WIP)",
     thumbnail: LUCKBRC,
     description: "A gambling dApp that runs on the Bitcoin Blockchain",
-    livePath: "https://https://young-tree-0093.on.fleek.co/",
+    livePath: "https://luckbrc.com",
     githubPath: "https://github.com/tonnertabhes/luckbrc",
     deprecated: false,
   },
