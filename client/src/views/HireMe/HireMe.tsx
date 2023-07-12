@@ -23,9 +23,9 @@ export default function HireMe({ hireMeRef }: HireMeInterface) {
   }
 
   function handleSubmit(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
-    e.preventDefault();
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     if (!emailRegex.test(email)) {
+      e.preventDefault();
       window.alert("Please enter a valid email address");
       return;
     }
